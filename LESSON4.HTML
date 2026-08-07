@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 4 - Applications of AP | SequenceScape</title>
+	<link rel="stylesheet" href="ARITH/LESSON4.CSS"/>
+	<link rel="stylesheet" href="ARITH/NUMFLOW.CSS"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style type="text/css">
+<!--
+.style1 {color: #FFFF00}
+.style2 {
+	color: #FFFFFF;
+	font-weight: bold;
+}
+-->
+    </style>
+</head>
+<body>
+
+    <!-- ========== FIXED NAVIGATION BAR ========== -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <div class="logo-icon">
+                <i class="fas fa-infinity"></i>            </div>
+            <span class="logo-text">SequenceScape</span>        </a>
+
+        <ul class="nav-links">
+            <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li class="dropdown">
+                <a href="LESSON.HTML"><i class="fas fa-book-open"></i> Lessons <i class="fas fa-chevron-down" style="font-size:11px;"></i></a>
+                <div class="dropdown-content">
+                    <a href="lesson1.html">INTRODUCTION TO Sequence and Series</a>
+                    <a href="lesson1.html">Arithmetic Sequence (AP)</a>
+                    <a href="lesson1.html" class="sub-item">&bull;&nbsp;&nbsp;Common Difference</a>
+                    <a href="lesson2.html" class="sub-item">&bull;&nbsp;&nbsp;n<sup>th</sup> Term of an AP</a>
+                    <a href="lesson3.html" class="sub-item">&bull;&nbsp;&nbsp;Finding Missing Terms</a>
+                    <a href="lesson4.html" class="sub-item">&bull;&nbsp;&nbsp;Application of AP</a>                </div>
+          </li>
+            <li><a href="Interactive learning.html"><i class="fas fa-question-circle"></i>Interactive learning </a></li>
+            <li><a href="ASSESSMENT.HTML">Assessment</a></li>
+            <li><a href="ABOUT US.HTML">About Us</a></li>
+        </ul>
+
+</nav>
+
+    <!-- ========== LESSON CONTENT ========== -->
+    <section class="lesson-section">
+
+        <h1 class="section-title style1"><a href="LESSON3.HTML"><strong>&lt;&lt;BACK</strong></a></h1>
+        <h1 class="section-title">Lesson 4: Applications of Arithmetic Progression</h1>
+        <p>
+            Arithmetic Progressions are not only theoretical. They appear in many real-life situations. 
+            In this lesson, we will learn how to apply the n<sup>th</sup> term formula to solve practical problems.
+        </p>
+
+        <h3>1. Common Real-Life Applications of AP</h3>
+        <div class="info-box">
+            <p>
+                &bull;&nbsp;&nbsp;Savings and money deposits<br>
+                &bull;&nbsp;&nbsp;Salary increments<br>
+                &bull;&nbsp;&nbsp;Taxi / transport fares<br>
+                &bull;&nbsp;&nbsp;Seating arrangements in halls or cinemas<br>
+                &bull;&nbsp;&nbsp;Construction (stairs, street lights, etc.)<br>
+                &bull;&nbsp;&nbsp;Sports training plans
+            </p>
+        </div>
+
+        <h3>2. Important Formula Used</h3>
+        <div class="formula-box">
+            a<sub>n</sub> = a + (n &ndash; 1)d
+        </div>
+        <p>
+            Where:<br>
+            &bull;&nbsp;&nbsp;<strong>a</strong> = first term<br>
+            &bull;&nbsp;&nbsp;<strong>d</strong> = common difference<br>
+            &bull;&nbsp;&nbsp;<strong>n</strong> = number of terms / position<br>
+            &bull;&nbsp;&nbsp;<strong>a<sub>n</sub></strong> = the required term
+        </p>
+
+        <!-- ========== WORKED EXAMPLES ========== -->
+        <h3>3. Worked Examples</h3>
+
+        <div class="example-box">
+            <p><strong style="color:#38bdf8;">Example 1: Savings</strong></p>
+            <p>
+                A student saves ?50 in the first week and increases the savings by ?20 every week. 
+                How much will the student save in the 8<sup>th</sup> week?
+            </p>
+            <p>
+                a = 50,&nbsp;&nbsp;d = 20,&nbsp;&nbsp;n = 8<br><br>
+                a<sub>8</sub> = 50 + (8 &ndash; 1) &times; 20<br>
+                a<sub>8</sub> = 50 + 7 &times; 20<br>
+                a<sub>8</sub> = 50 + 140 = <strong>?190</strong>
+            </p>
+        </div>
+
+        <div class="example-box">
+            <p><strong style="color:#38bdf8;">Example 2: Taxi Fare</strong></p>
+            <p>
+                A taxi charges ?30 for the first kilometre and ?12 for every additional kilometre. 
+                What is the fare for a 10 km journey?
+            </p>
+            <p>
+                a = 30,&nbsp;&nbsp;d = 12,&nbsp;&nbsp;n = 10<br><br>
+                a<sub>10</sub> = 30 + (10 &ndash; 1) &times; 12<br>
+                a<sub>10</sub> = 30 + 9 &times; 12<br>
+                a<sub>10</sub> = 30 + 108 = <strong>?138</strong>
+            </p>
+        </div>
+
+        <div class="example-box">
+            <p><strong style="color:#38bdf8;">Example 3: Seating Arrangement</strong></p>
+            <p>
+                In a cinema hall, the first row has 12 seats. Each next row has 3 more seats than the previous one. 
+                How many seats are in the 7<sup>th</sup> row?
+            </p>
+            <p>
+                a = 12,&nbsp;&nbsp;d = 3,&nbsp;&nbsp;n = 7<br><br>
+                a<sub>7</sub> = 12 + (7 &ndash; 1) &times; 3<br>
+                a<sub>7</sub> = 12 + 6 &times; 3<br>
+                a<sub>7</sub> = 12 + 18 = <strong>30 seats</strong>
+            </p>
+        </div>
+
+        <div class="example-box">
+            <p><strong style="color:#38bdf8;">Example 4: Salary Increment</strong></p>
+            <p>
+                A worker earns ?800 in the first month. His salary increases by ?50 every month. 
+                What will be his salary in the 12<sup>th</sup> month?
+            </p>
+            <p>
+                a = 800,&nbsp;&nbsp;d = 50,&nbsp;&nbsp;n = 12<br><br>
+                a<sub>12</sub> = 800 + (12 &ndash; 1) &times; 50<br>
+                a<sub>12</sub> = 800 + 11 &times; 50<br>
+                a<sub>12</sub> = 800 + 550 = <strong>?1,350</strong>
+            </p>
+        </div>
+
+        <div class="example-box">
+            <p><strong style="color:#38bdf8;">Example 5: Street Lights</strong></p>
+            <p>
+                Street lights are placed at equal distances along a road. The first light is 20 metres from the starting point 
+                and each subsequent light is 15 metres further. How far is the 9<sup>th</sup> light from the starting point?
+            </p>
+            <p>
+                a = 20,&nbsp;&nbsp;d = 15,&nbsp;&nbsp;n = 9<br><br>
+                a<sub>9</sub> = 20 + (9 &ndash; 1) &times; 15<br>
+                a<sub>9</sub> = 20 + 8 &times; 15<br>
+                a<sub>9</sub> = 20 + 120 = <strong>140 metres</strong>
+            </p>
+        </div>
+
+        <!-- ========== EXERCISES ========== -->
+        <h2 class="section-title" style="font-size:2rem; margin-top:60px;">Exercises</h2>
+        <p style="color:#94a3b8; margin-bottom:25px;">Solve the following real-life problems.</p>
+
+        <div class="exercise-box">
+            <h4>Exercise 1</h4>
+            <p>
+                A student saves ?40 in the first week and increases the savings by ?15 every week. 
+                How much will he save in the 6<sup>th</sup> week?
+            </p>
+        </div>
+
+        <div class="exercise-box">
+            <h4>Exercise 2</h4>
+            <p>
+                A taxi charges ?25 for the first kilometre and ?10 for every extra kilometre. 
+                What is the fare for an 8 km journey?
+            </p>
+        </div>
+
+        <div class="exercise-box">
+            <h4>Exercise 3</h4>
+            <p>
+                The first row of a hall has 10 seats. Each next row has 4 more seats. 
+                How many seats are in the 5<sup>th</sup> row?
+            </p>
+        </div>
+
+        <div class="exercise-box">
+            <h4>Exercise 4</h4>
+            <p>
+                A worker earns ?600 in the first month. His salary increases by ?40 every month. 
+                What will be his salary in the 10<sup>th</sup> month?
+            </p>
+        </div>
+
+        <div class="exercise-box">
+            <h4>Exercise 5</h4>
+            <p>
+                The first street light is placed 25 metres from a junction and each subsequent light is 18 metres further. 
+                How far is the 7<sup>th</sup> light from the junction?
+            </p>
+        </div>
+
+        <div class="exercise-box">
+            <h4>Exercise 6</h4>
+            <p>
+                A person deposits ?200 in the first month and increases the deposit by ?50 every month. 
+                How much will he deposit in the 9<sup>th</sup> month?
+            </p>
+        </div>
+
+        <div style="background: linear-gradient(90deg, #0ea5e9, #6366f1); padding: 18px 25px; border-radius: 10px; margin-top: 30px;">
+            <p style="margin:0; font-size:1.05rem;">
+            <strong>Remember:</strong> In real-life problems, always identify the first term (a), the common difference (d), and the required position (n) before applying the formula.</p>
+            <p class="style2" style="margin:0; font-size:1.05rem;"><a href="Interactive learning.html">INTERACTIVE&gt;&gt;&gt;</a> </p>
+        </div>
+
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+<footer>
+        <div class="footer-logo">SequenceScape</div>
+    <p style="color:#94a3b8;">Making Sequences &amp; Series Beautiful</p>
+    </footer>
+
+</body>
+</html>

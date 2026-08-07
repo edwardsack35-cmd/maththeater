@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizzes - SequenceScape</title>
+	<link rel="stylesheet" href="ARITH/QUIZ.CSS"/>
+	<link rel="stylesheet" href="ARITH/NUMFLOW.CSS"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+   
+    <script type="text/JavaScript">
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+</head>
+<body onLoad="MM_preloadImages('IMAGE/ASSESS_MENT.png')">
+
+    <!-- ========== FIXED NAVIGATION BAR ========== -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <div class="logo-icon">
+                <i class="fas fa-infinity"></i>
+            </div>
+            <span class="logo-text">SequenceScape</span>
+        </a>
+
+        <ul class="nav-links">
+            <li><a href="index.html"><i class="fas fa-hoe"></i> Home</a></li>
+            <li><a href="LESSON.HTML"><i class="fas fa-book-open"></i> Lessons</a></li>
+            <li><a href="Interactive learning.html"><i class="fas fa-question-circle"></i>Interactive learning </a></li>
+            <li><a href="ASSESSMENT.HTML"><i class="fas fa-users"></i> Assessment</a></li>
+            <li><a href="ABOUT US.HTML"><i class="fas fa-envelope"></i>About us </a></li>
+        </ul>
+
+</nav>
+
+    <!-- ========== QUIZZES SECTION ========== -->
+    
+
+    <!-- ========== FOOTER ========== -->
+    <footer>
+        <div class="footer-logo">
+          <table width="1156" height="41" border="1" align="center">
+            <tr>
+              <td width="298" height="35"><a href="LESSON1.HTML">TO LESSON ONE</a> </td>
+              <td width="301"><a href="LESSON2.HTML">TO LESSON TWO</a> </td>
+              <td width="319"><a href="LESSON3.HTML">TO LESSON THREE</a> </td>
+              <td width="341"><a href="LESSON4.HTML">TO LESSON FOUR</a> </td>
+            </tr>
+          </table>
+          <p>&nbsp;</p>
+          <p>EXPLORE MORE FOR YOURSELLF</p>
+        </div>
+        
+
+         <title>Arithmetic Progression Explorer</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #f4f7f6;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        .ap-container {
+            max-width: 650px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #2c3e50;
+            margin-top: 0;
+        }
+        .input-group {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+        .input-field {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .input-field label {
+            font-weight: bold;
+        }
+        .input-field input {
+            width: 90px;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            text-align: center;
+            font-size: 16px;
+        }
+        .formula-box {
+            background-color: #eef6ff;
+            border-left: 4px solid #3498db;
+            padding: 12px 15px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+        .formula-box p {
+            margin: 5px 0;
+            font-size: 15px;
+        }
+        .sequence-display {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 15px;
+            min-height: 45px;
+        }
+        .term-card {
+            background: #27ae60;
+            color: white;
+            padding: 8px 14px;
+            border-radius: 6px;
+            font-weight: bold;
+            font-size: 16px;
+            animation: fadeIn 0.3s ease-in;
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin-top: 20px;
+        }
+        .stat-card {
+            background: #f8f9fa;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+            text-align: center;
+        }
+        .stat-card span {
+            display: block;
+            font-size: 20px;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-top: 4px;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(5px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+<div class="ap-container">
+  <h2>&nbsp;</h2>
+    <h2>Arithmetic Progression Explorer</h2>
+    <p style="text-align: center; color: #666; font-size: 14px;">Adjust parameters to visualize the sequence, nth term, and total sum.</p>
+
+    <div class="input-group">
+        <div class="input-field">
+            <label for="firstTerm">First Term (a):</label>
+            <input type="number" id="firstTerm" value="2" oninput="calculateAP()">
+        </div>
+      <div class="input-field">
+            <label for="diff">Common Difference (d):</label>
+            <input name="number" type="number" id="diff" value="3" oninput="calculateAP()">
+      </div>
+        <div class="input-field">
+            <label for="numTerms">Number of Terms (n):</label>
+            <input type="number" id="numTerms" value="8" min="1" max="25" oninput="calculateAP()">
+        </div>
+    </div>
+
+    <div class="formula-box">
+        <p><strong>General Term (T_n):</strong> T_n = a + (n - 1)d</p>
+        <p><strong>Sum of n Terms (S_n):</strong> S_n = n/2[2a + (n - 1)d]</p>
+    </div>
+
+    <label><strong>Generated Sequence:</strong></label>
+    <div class="sequence-display" id="sequenceDisplay"></div>
+
+    <div class="stats-grid">
+        <div class="stat-card">
+            Last Term (T_n)
+            <span id="nthTerm">23</span>
+        </div>
+        <div class="stat-card">
+            Total Sum (S_n)
+            <span id="sumTerms">100</span>
+        </div>
+    </div>
+</div>
+
+<script>
+    function calculateAP() {
+        const a = parseFloat(document.getElementById('firstTerm').value) || 0;
+        const d = parseFloat(document.getElementById('diff').value) || 0;
+        let n = parseInt(document.getElementById('numTerms').value) || 1;
+
+        if (n < 1) n = 1;
+        if (n > 30) n = 30; // Limit for performance/display cleanliness
+
+        const sequenceDisplay = document.getElementById('sequenceDisplay');
+        sequenceDisplay.innerHTML = '';
+
+        let currentTerm = a;
+        for (let i = 1; i <= n; i++) {
+            currentTerm = a + (i - 1) * d;
+            const card = document.createElement('div');
+            card.className = 'term-card';
+            card.textContent = currentTerm;
+            sequenceDisplay.appendChild(card);
+        }
+
+        const nthTerm = a + (n - 1) * d;
+        const sum = (n / 2) * (2 * a + (n - 1) * d);
+
+        document.getElementById('nthTerm').textContent = nthTerm;
+        document.getElementById('sumTerms').textContent = sum;
+    }
+
+    // Initial calculation on page load
+    calculateAP();
+</script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SequenceScape - AP Calculator</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+   
+   
+}
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.header h1 {
+    font-size: 32px;
+    color: #38bdf8;
+    margin-bottom: 8px;
+}
+.header p {
+    color: #94a3b8;
+    font-size: 16px;
+}
+.calc-box {
+    background: rgba(30, 41, 59, 0.95);
+    border-radius: 16px;
+    padding: 25px;
+    margin-bottom: 25px;
+    border: 1px solid rgba(56, 189, 248, 0.3);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+.calc-box h3 {
+    color: #38bdf8;
+    margin-bottom: 8px;
+    font-size: 20px;
+}
+.calc-box .formula {
+    color: #94a3b8;
+    font-size: 14px;
+    margin-bottom: 18px;
+}
+label {
+    display: block;
+    color: #a78bfa;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+input[type="number"] {
+    width: 100%;
+    padding: 11px 14px;
+    margin-bottom: 14px;
+    border: 2px solid #334155;
+    border-radius: 8px;
+    background: #0f172a;
+    color: #e2e8f0;
+    font-size: 15px;
+}
+input[type="number"]:focus {
+    outline: none;
+    border-color: #38bdf8;
+}
+.btn-group {
+    display: flex;
+    gap: 12px;
+    margin-top: 5px;
+}
+button {
+    padding: 11px 22px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 14px;
+}
+.btn-calc {
+    background: linear-gradient(90deg, #38bdf8, #818cf8);
+    color: #0f172a;
+}
+.btn-clear {
+    background: #334155;
+    color: #e2e8f0;
+}
+.result {
+    margin-top: 16px;
+    padding: 14px;
+    background: #0f172a;
+    border: 1px solid #38bdf8;
+    border-radius: 8px;
+    text-align: center;
+    color: #38bdf8;
+    font-size: 17px;
+    font-weight: 600;
+}
+.footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #94a3b8;
+    font-size: 13px;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="header">
+        
+        <p>One calculator for all 4 Arithmetic Sequence lessons</p>
+    </div>
+
+    <!-- 1. Common Difference -->
+    <div class="calc-box">
+        <h3>1. Common Difference</h3>
+        <p class="formula">Formula: d = a<sub>2</sub> &minus; a<sub>1</sub></p>
+
+        <label>First Term (a<sub>1</sub>)</label>
+        <input type="number" id="cd_a1" placeholder="Enter first term">
+
+        <label>Next Term (a<sub>2</sub>)</label>
+        <input type="number" id="cd_a2" placeholder="Enter next term">
+
+        <div class="btn-group">
+            <button class="btn-calc" onclick="calcCD()">Calculate d</button>
+            <button class="btn-clear" onclick="clearCD()">Clear</button>
+        </div>
+        <div class="result" id="resultCD">Result will appear here</div>
+    </div>
+
+    <!-- 2. nth Term -->
+    <div class="calc-box">
+        <h3>2. nth Term of an AP</h3>
+        <p class="formula">Formula: a<sub>n</sub> = a + (n &minus; 1)d</p>
+
+        <label>First Term (a)</label>
+        <input type="number" id="nth_a" placeholder="Enter first term">
+
+        <label>Common Difference (d)</label>
+        <input type="number" id="nth_d" placeholder="Enter common difference">
+
+        <label>Term Number (n)</label>
+        <input type="number" id="nth_n" placeholder="Enter position n">
+
+        <div class="btn-group">
+            <button class="btn-calc" onclick="calcNth()">Calculate a<sub>n</sub></button>
+            <button class="btn-clear" onclick="clearNth()">Clear</button>
+        </div>
+        <div class="result" id="resultNth">Result will appear here</div>
+    </div>
+
+    <!-- 3. Finding Missing Term -->
+    <div class="calc-box">
+        <h3>3. Finding Missing Term</h3>
+        <p class="formula">Missing term = (term before + term after) &divide; 2</p>
+
+        <label>Term Before the Missing One</label>
+        <input type="number" id="miss_a" placeholder="Enter term before">
+
+        <label>Term After the Missing One</label>
+        <input type="number" id="miss_c" placeholder="Enter term after">
+
+        <div class="btn-group">
+            <button class="btn-calc" onclick="calcMiss()">Find Missing Term</button>
+            <button class="btn-clear" onclick="clearMiss()">Clear</button>
+        </div>
+        <div class="result" id="resultMiss">Result will appear here</div>
+    </div>
+
+    <!-- 4. Applications of AP -->
+    <div class="calc-box">
+        <h3>4. Applications of AP (Salary / Savings)</h3>
+        <p class="formula">Uses a<sub>n</sub> = a + (n &minus; 1)d</p>
+
+        <label>Starting Amount</label>
+        <input type="number" id="app_a" placeholder="e.g. first salary">
+
+        <label>Constant Increase (d)</label>
+        <input type="number" id="app_d" placeholder="e.g. weekly increase">
+
+        <label>Number of Periods (n)</label>
+        <input type="number" id="app_n" placeholder="e.g. 12 weeks">
+
+        <div class="btn-group">
+            <button class="btn-calc" onclick="calcApp()">Calculate</button>
+            <button class="btn-clear" onclick="clearApp()">Clear</button>
+        </div>
+        <div class="result" id="resultApp">Result will appear here</div>
+    </div>
+
+</div>
+
+<script>
+/* 1. Common Difference */
+function calcCD() {
+    var a1 = parseFloat(document.getElementById('cd_a1').value);
+    var a2 = parseFloat(document.getElementById('cd_a2').value);
+    if (isNaN(a1) || isNaN(a2)) {
+        document.getElementById('resultCD').innerHTML = 'Please enter valid numbers';
+        return;
+    }
+    document.getElementById('resultCD').innerHTML = 'Common Difference (d) = ' + (a2 - a1);
+}
+function clearCD() {
+    document.getElementById('cd_a1').value = '';
+    document.getElementById('cd_a2').value = '';
+    document.getElementById('resultCD').innerHTML = 'Result will appear here';
+}
+
+/* 2. nth Term */
+function calcNth() {
+    var a = parseFloat(document.getElementById('nth_a').value);
+    var d = parseFloat(document.getElementById('nth_d').value);
+    var n = parseFloat(document.getElementById('nth_n').value);
+    if (isNaN(a) || isNaN(d) || isNaN(n)) {
+        document.getElementById('resultNth').innerHTML = 'Please enter valid numbers';
+        return;
+    }
+    document.getElementById('resultNth').innerHTML = 'a<sub>n</sub> = ' + (a + (n - 1) * d);
+}
+function clearNth() {
+    document.getElementById('nth_a').value = '';
+    document.getElementById('nth_d').value = '';
+    document.getElementById('nth_n').value = '';
+    document.getElementById('resultNth').innerHTML = 'Result will appear here';
+}
+
+/* 3. Missing Term */
+function calcMiss() {
+    var a = parseFloat(document.getElementById('miss_a').value);
+    var c = parseFloat(document.getElementById('miss_c').value);
+    if (isNaN(a) || isNaN(c)) {
+        document.getElementById('resultMiss').innerHTML = 'Please enter valid numbers';
+        return;
+    }
+    document.getElementById('resultMiss').innerHTML = 'Missing Term = ' + ((a + c) / 2);
+}
+function clearMiss() {
+    document.getElementById('miss_a').value = '';
+    document.getElementById('miss_c').value = '';
+    document.getElementById('resultMiss').innerHTML = 'Result will appear here';
+}
+
+/* 4. Applications */
+function calcApp() {
+    var a = parseFloat(document.getElementById('app_a').value);
+    var d = parseFloat(document.getElementById('app_d').value);
+    var n = parseFloat(document.getElementById('app_n').value);
+    if (isNaN(a) || isNaN(d) || isNaN(n)) {
+        document.getElementById('resultApp').innerHTML = 'Please enter valid numbers';
+        return;
+    }
+    document.getElementById('resultApp').innerHTML = 'Amount after ' + n + ' periods = ' + (a + (n - 1) * d);
+}
+function clearApp() {
+    document.getElementById('app_a').value = '';
+    document.getElementById('app_d').value = '';
+    document.getElementById('app_n').value = '';
+    document.getElementById('resultApp').innerHTML = 'Result will appear here';
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 3 - Finding Missing Terms | SequenceScape</title>
+	<link rel="stylesheet" href="ARITH/LESSON3.CSS"/>
+	<link rel="stylesheet" href="ARITH/NUMFLOW.CSS"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style type="text/css">
+<!--
+.style1 {
+	color: #33FF66;
+	font-weight: bold;
+}
+.style2 {color: #33FF33}
+.style5 {
+	color: #FFFFFF;
+	font-weight: bold;
+}
+.style6 {color: #FFFFFF}
+.style7 {color: #FF0000}
+.style9 {color: #CCCCCC}
+.style10 {
+	font-weight: bold;
+	font-size: 16px;
+}
+-->
+    </style>
+</head>
+<body>
+
+    <!-- ========== FIXED NAVIGATION BAR ========== -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <div class="logo-icon">
+                <i class="fas fa-infinity"></i>            </div>
+            <span class="logo-text">SequenceScape</span>        </a>
+
+        <ul class="nav-links">
+            <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li class="dropdown">
+                <a href="LESSON.HTML"><i class="fas fa-book-open"></i> Lessons <i class="fas fa-chevron-down" style="font-size:11px;"></i></a>
+                <div class="dropdown-content">
+                    <a href="lesson1.html">INTRODUCTION TO Sequence and Series</a>
+                    <a href="lesson1.html">Arithmetic Sequence (AP)</a>
+                    <a href="lesson1.html" class="sub-item">&bull;&nbsp;&nbsp;Common Difference</a>
+                    <a href="lesson2.html" class="sub-item">&bull;&nbsp;&nbsp;n<sup>th</sup> Term of an AP</a>
+                    <a href="lesson3.html" class="sub-item">&bull;&nbsp;&nbsp;Finding Missing Terms</a>
+                    <a href="lesson4.html" class="sub-item">&bull;&nbsp;&nbsp;Application of AP</a>                </div>
+          </li>
+            <li><a href="Interactive learning.html"><i class="fas fa-question-circle"></i>Interactive learning </a></li>
+            <li><a href="ASSESSMENT.HTML">Assessment</a></li>
+            <li><a href="ABOUT US.HTML">About Us</a></li>
+        </ul>
+
+</nav>
+
+    <!-- ========== LESSON CONTENT ========== -->
+    <section class="lesson-section">
+      <p class="style1"><a href="LESSON2.HTML" class="style2">&lt;&lt;BACK</a></p>
+      <h1 class="section-title">Lesson 3: Finding Missing Terms in an Arithmetic Progression</h1>
+
+        <p>
+            In many problems, some terms of an Arithmetic Progression are missing. 
+            In this lesson, you will learn how to find those missing terms using the common difference.
+        </p>
+
+        <h3>1. Understanding the Problem</h3>
+        <p>
+            When terms are missing between two known terms, we first calculate the common difference 
+            and then use it to fill the blanks one by one.
+        </p>
+
+        <div class="info-box">
+            <p><strong>Key Idea:</strong></p>
+            <p>
+                If there are <strong>k</strong> missing terms between two known terms, 
+                then the number of steps (gaps) between them is <strong>k + 1</strong>.
+            </p>
+        </div>
+
+        <h3>2. Formula for Common Difference when Terms are Missing</h3>
+        <p>
+            Suppose the first known term is <strong>a</strong> and the last known term is <strong>l</strong>, 
+            and there are <strong>m</strong> steps between them.
+        </p>
+
+        <div class="formula-box">
+            d = 
+            <span class="fraction">
+                <span class="num">l &ndash; a</span>
+                <span class="den">m</span>
+            </span>
+        </div>
+
+        <p>Once we find <strong>d</strong>, we can find the missing terms by repeatedly adding <strong>d</strong>.</p>
+
+        <h3>3. Step-by-Step Method</h3>
+        <div class="info-box">
+            <p>
+                &bull;&nbsp;&nbsp;<strong>Step 1:</strong> Identify the first and last known terms<br>
+                &bull;&nbsp;&nbsp;<strong>Step 2:</strong> Count the number of steps (gaps) between them<br>
+                &bull;&nbsp;&nbsp;<strong>Step 3:</strong> Calculate the common difference using the formula above<br>
+                &bull;&nbsp;&nbsp;<strong>Step 4:</strong> Add the common difference repeatedly to find the missing terms
+            </p>
+        </div>
+
+        <!-- ========== WORKED EXAMPLES ========== -->
+        <h3>4. Worked Examples</h3>
+
+        <div class="example-box">
+            <p><strong style="color:#38bdf8;">Example 1:</strong> Find the missing terms: 5, ____, ____, ____, 17</p>
+            <p>
+                First term a = 5<br>
+                Last term l = 17<br>
+                Number of steps m = 4<br><br>
+                d = 
+                <span class="fraction">
+                    <span class="num">17 &ndash; 5</span>
+                    <span class="den">4</span>
+                </span>
+                = 
+                <span class="fraction">
+                    <span class="num">12</span>
+                    <span class="den">4</span>
+                </span>
+                = 3
+            </p>
+            <p>
+                Now fill the missing terms:<br>
+                5 + 3 = 8<br>
+                8 + 3 = 11<br>
+                11 + 3 = 14
+            </p>
+            <p>Therefore, the sequence is: <strong>5, 8, 11, 14, 17</strong></p>
+        </div>
+
+        <div class="example-box">
+            <p><strong style="color:#38bdf8;">Example 2:</strong> Find the missing terms: 20, ____, ____, 5</p>
+            <p>
+                First term a = 20<br>
+                Last term l = 5<br>
+                Number of steps m = 3<br><br>
+                d = 
+                <span class="fraction">
+                    <span class="num">5 &ndash; 20</span>
+                    <span class="den">3</span>
+                </span>
+                = 
+                <span class="fraction">
+                    <span class="num">&ndash;15</span>
+                    <span class="den">3</span>
+                </span>
+                = &ndash;5
+            </p>
+            <p>
+                Missing terms:<br>
+                20 + (&ndash;5) = 15<br>
+                15 + (&ndash;5) = 10
+            </p>
+            <p>Therefore, the sequence is: <strong>20, 15, 10, 5</strong></p>
+        </div>
+
+        <div class="example-box">
+            <p><strong style="color:#38bdf8;">Example 3:</strong> Find the missing term: 7, ____, 19</p>
+            <p>
+                a = 7, &nbsp; l = 19, &nbsp; m = 2<br><br>
+                d = 
+                <span class="fraction">
+                    <span class="num">19 &ndash; 7</span>
+                    <span class="den">2</span>
+                </span>
+                = 
+                <span class="fraction">
+                    <span class="num">12</span>
+                    <span class="den">2</span>
+                </span>
+                = 6
+            </p>
+            <p>
+                Missing term = 7 + 6 = <strong>13</strong>
+            </p>
+            <p>Therefore, the sequence is: <strong>7, 13, 19</strong></p>
+        </div>
+
+        <div class="example-box">
+            <p><strong style="color:#38bdf8;">Example 4:</strong> Find the missing terms: 3, ____, ____, ____, ____, 23</p>
+            <p>
+                a = 3, &nbsp; l = 23, &nbsp; m = 5<br><br>
+                d = 
+                <span class="fraction">
+                    <span class="num">23 &ndash; 3</span>
+                    <span class="den">5</span>
+                </span>
+                = 
+                <span class="fraction">
+                    <span class="num">20</span>
+                    <span class="den">5</span>
+                </span>
+                = 4
+            </p>
+            <p>
+                Missing terms:<br>
+                3 + 4 = 7<br>
+                7 + 4 = 11<br>
+                11 + 4 = 15<br>
+                15 + 4 = 19
+            </p>
+            <p>Therefore, the sequence is: <strong>3, 7, 11, 15, 19, 23</strong></p>
+        </div>
+
+        <div class="example-box">
+            <p><strong style="color:#38bdf8;">Example 5 (with fraction):</strong></p>
+            <p>
+                Find the missing terms: 
+                <span class="fraction"><span class="num">1</span><span class="den">2</span></span>, 
+                ____, ____, 2
+            </p>
+            <p>
+                a = 
+                <span class="fraction"><span class="num">1</span><span class="den">2</span></span>, &nbsp;
+                l = 2, &nbsp; m = 3<br><br>
+                d = 
+                <span class="fraction">
+                    <span class="num">2 &ndash; 
+                        <span class="fraction"><span class="num">1</span><span class="den">2</span></span>
+                    </span>
+                    <span class="den">3</span>
+                </span>
+                = 
+                <span class="fraction">
+                    <span class="num">
+                        <span class="fraction"><span class="num">4</span><span class="den">2</span></span> &ndash; 
+                        <span class="fraction"><span class="num">1</span><span class="den">2</span></span>
+                    </span>
+                    <span class="den">3</span>
+                </span>
+                = 
+                <span class="fraction">
+                    <span class="num">
+                        <span class="fraction"><span class="num">3</span><span class="den">2</span></span>
+                    </span>
+                    <span class="den">3</span>
+                </span>
+                = 
+                <span class="fraction"><span class="num">3</span><span class="den">2</span></span> &times; 
+                <span class="fraction"><span class="num">1</span><span class="den">3</span></span> = 
+                <span class="fraction"><span class="num">1</span><span class="den">2</span></span>
+            </p>
+            <p>
+                Missing terms:<br>
+                <span class="fraction"><span class="num">1</span><span class="den">2</span></span> + 
+                <span class="fraction"><span class="num">1</span><span class="den">2</span></span> = 1<br>
+                1 + 
+                <span class="fraction"><span class="num">1</span><span class="den">2</span></span> = 
+                <span class="fraction"><span class="num">3</span><span class="den">2</span></span>
+            </p>
+            <p>
+                Therefore, the sequence is: 
+                <span class="fraction"><span class="num">1</span><span class="den">2</span></span>, 
+                1, 
+                <span class="fraction"><span class="num">3</span><span class="den">2</span></span>, 2
+            </p>
+        </div>
+
+        <!-- ========== EXERCISES ========== -->
+        <h2 class="section-title" style="font-size:2rem; margin-top:60px;">Exercises</h2>
+        <p style="color:#94a3b8; margin-bottom:25px;">Practise the following questions.</p>
+
+        <div class="exercise-box">
+            <h4>Exercise 1</h4>
+            <p>Find the missing terms: 4, ____, ____, 16</p>
+        </div>
+
+        <div class="exercise-box">
+            <h4>Exercise 2</h4>
+            <p>Find the missing terms: 9, ____, ____, ____, 25</p>
+        </div>
+
+        <div class="exercise-box">
+            <h4>Exercise 3</h4>
+            <p>Find the missing terms: 30, ____, ____, 9</p>
+        </div>
+
+        <div class="exercise-box">
+            <h4>Exercise 4</h4>
+            <p>Find the missing term: 11, ____, 23</p>
+        </div>
+
+        <div class="exercise-box">
+            <h4>Exercise 5</h4>
+            <p>Find the missing terms: 2, ____, ____, ____, ____, 17</p>
+        </div>
+
+      <div class="exercise-box">
+            <h4>Exercise 6</h4>
+            <p>
+                Find the missing terms: 
+                <span class="fraction"><span class="num">1</span><span class="den">3</span></span>, 
+                ____, ____, 
+                <span class="fraction"><span class="num">5</span><span class="den">3</span></span>            </p>
+            <p class="style5"><a href="LESSON4.HTML" class="style6">CONTINUE&gt;&gt;</a></p>
+            <p class="style7"><span class="style10"><a href="Interactive learning.html" class="style6">INTERACTIVE</a><span class="style9"> <a href="Interactive learning.html"><span class="style6">LEARNING&gt;&gt;&gt;</span></a></span></span> </p>
+      </div>
+
+        <div style="background: linear-gradient(90deg, #0ea5e9, #6366f1); padding: 18px 25px; border-radius: 10px; margin-top: 30px;">
+            <p style="margin:0; font-size:1.05rem;">
+                <strong>Tip:</strong> Always count the number of gaps carefully. The number of steps is one less than the total number of terms from the first known term to the last known term.
+            </p>
+        </div>
+
+</section>
+
+    <!-- ========== FOOTER ========== -->
+<footer>
+        <div class="footer-logo">SequenceScape</div>
+    <p style="color:#94a3b8;">Making Sequences &amp; Series Beautiful</p>
+    </footer>
+
+</body>
+</html>
